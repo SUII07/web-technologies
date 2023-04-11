@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        .parent{
+            height: 1000vh;
+            background-color: crimson;
+            border: 2px solid black;
+        }
+        .box{
+            width: 300px;
+            height: 250px;
+            border: 1px dashed burlywood;
+        }
+        .box1{
+            background-color: aquamarine;
+            position:static;
+            /* right: 10px;
+            top: 20px; */
+        }
+        .box2{
+            background-color:red;
+            position: relative;
+            /* right: 10px;
+            top: 20px; */
+        }
+        .box3{
+            background-color: rgb(255, 127, 146);
+            position: absolute;
+            right: 10px;
+            top: 20px;
+        }
+        .box4{
+            background-color: rgb(255, 214, 127);
+            position: fixed;
+            /* right: 10px;
+            top: 20px; */
+        }
+        .box5{
+            background-color: rgb(140, 127, 255);
+            position: sticky;
+            /* right: 10px;
+            top: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1">I am static</div>
+        <div class="box box2">I am relative</div>
+        <div class="box box3">I am absolute</div>
+        <div class="box box4">I am fixed</div>
+        <div class="box box5">I am sticky</div>
+    </div>
+</body>
+</html>
